@@ -1,0 +1,10 @@
+<h1> Calculator using angular</h1>
+<!--<input type="text" value="[(ngModel)]" >-->
+
+<br>
+<input type="text" id="instance" placeholder="enter number of instances " value=""> &nbsp;
+<button id="ins" (click)="clicked()">Instance</button>
+<br>
+
+<app-calculator *ngFor=" let each of arr"  [calId]=each></app-calculator>
+
